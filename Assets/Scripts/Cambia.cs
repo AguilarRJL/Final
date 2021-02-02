@@ -7,6 +7,9 @@ public class Cambia : MonoBehaviour
     public GameObject camara;
     public GameObject player1;
     public GameObject player2;
+
+  
+
     public int currPlayer;
     private bool cambiar;
 
@@ -15,6 +18,12 @@ public class Cambia : MonoBehaviour
     {
         currPlayer = 1;
         cambiar = false;
+
+        player1.GetComponent<PlayerController>().enabled = false;
+     //   player2.GetComponent<PlayerController>().enabled = true;*/
+
+        FollowPlayer c = camara.GetComponent<FollowPlayer>();
+        c.follow = player2;
     }
 
     // Update is called once per frame
@@ -24,6 +33,7 @@ public class Cambia : MonoBehaviour
         {
             currPlayer = currPlayer + 1;
             currPlayer = currPlayer % 2 == 0 ? 0 : 1;
+           
             cambiar = true;
         }
 
@@ -31,7 +41,7 @@ public class Cambia : MonoBehaviour
 
     }
 
-    private void LateUpdate()
+    private void FixedUpdate()
     {
         if (cambiar)
         {
@@ -44,22 +54,17 @@ public class Cambia : MonoBehaviour
     {
         if (currPlayer == 0)
         {
-            player1.AddComponent<PlayerController>();
-            if (player2.GetComponent<PlayerController>() != null)
-            {
-                Destroy(player2.GetComponent<PlayerController>());
-            }
+            player1.GetComponent<PlayerController>().enabled = true;
+            player2.GetComponent<PC2>().enabled = false;
+
             FollowPlayer c= camara.GetComponent<FollowPlayer>();
             c.follow = player1;
         }
 
         if (currPlayer == 1)
         {
-            player2.AddComponent<PlayerController>();
-            if (player1.GetComponent<PlayerController>() != null)
-            {
-                Destroy(player1.GetComponent<PlayerController>());
-            }
+            player1.GetComponent<PlayerController>().enabled = false;
+            player2.GetComponent<PC2>().enabled = true;
             FollowPlayer c = camara.GetComponent<FollowPlayer>();
             c.follow = player2;
 

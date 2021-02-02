@@ -276,6 +276,7 @@ GameObject:
   - component: {fileID: 380656763}
   - component: {fileID: 380656767}
   - component: {fileID: 380656766}
+  - component: {fileID: 380656765}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player
@@ -349,6 +350,24 @@ Transform:
   m_Father: {fileID: 334488717}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &380656765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380656762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15596a8970a5942419d1dca8197669a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 75
+  jumpPower: 6.5
+  MaxSpeed: 10
+  tipo: 
+  grounded: 1
+  jump: 0
 --- !u!61 &380656766
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -497,6 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32fff1c50dd19e147b3fd6b191f40170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipo: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,6 +661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32fff1c50dd19e147b3fd6b191f40170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipo: 0
 --- !u!58 &533535482
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1173,6 +1194,7 @@ GameObject:
   - component: {fileID: 1460560367}
   - component: {fileID: 1460560370}
   - component: {fileID: 1460560369}
+  - component: {fileID: 1460560371}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -1239,7 +1261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460560366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.98, y: -5.82, z: 5.617734}
+  m_LocalPosition: {x: 1.88, y: -5.82, z: 5.617734}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 533535480}
@@ -1293,6 +1315,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1460560371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460560366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89589a7d22ab1d042aa40b9110aeeab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 75
+  jumpPower: 6.5
+  MaxSpeed: 10
+  tipo: 
+  grounded: 1
+  jump: 0
 --- !u!1001 &1543347610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1521,7 +1561,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2233726179069141592, guid: a0b999768282a984e96f8b3bfb406a73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.23
+      value: 20.4
       objectReference: {fileID: 0}
     - target: {fileID: 2233726179069141592, guid: a0b999768282a984e96f8b3bfb406a73, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1571,6 +1611,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2233726181026533659, guid: a0b999768282a984e96f8b3bfb406a73, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2233726181026533662, guid: a0b999768282a984e96f8b3bfb406a73, type: 3}
       propertyPath: m_Name
       value: PlataformaM
@@ -1594,7 +1638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4245403935553752349, guid: 91bf799596ea7804fb5e25a605a4ffbd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5
+      value: -3.44
       objectReference: {fileID: 0}
     - target: {fileID: 4245403935553752349, guid: 91bf799596ea7804fb5e25a605a4ffbd, type: 3}
       propertyPath: m_LocalPosition.y
