@@ -13,7 +13,7 @@ public class Cambia : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currPlayer = 0;
+        currPlayer = 1;
         cambiar = false;
     }
 

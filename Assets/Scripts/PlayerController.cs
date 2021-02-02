@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float speed = 75f;
+    public float jumpPower = 6.5f;
+    public float MaxSpeed = 10;
     public string tipo;
     private Rigidbody2D rb2d;
     private Vector2 last;
 
+
+    public bool grounded=true;
+    public bool jump=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,34 +22,62 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
-    private void LateUpdate()
+    private void Update()
     {
-        if (gameObject.name == "Player2")
+      /*if (grounded)
+       {
+                jump = true;
+       }*/
+
+        if (Input.GetKeyDown(KeyCode.Space) && gameObject.name=="Player2")
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (grounded)
             {
-                rb2d.AddForce(Vector2.up*5, ForceMode2D.Impulse);
+                jump = true;
             }
         }
 
+      
+
+
+    }
+
+    private void FixedUpdate()
+    {
+        Vector3 fixedVelocity = rb2d.velocity;
+        fixedVelocity.x *= .05f;
+
+        if (grounded)
+        {
+            rb2d.velocity = fixedVelocity;
+        }
 
         float h = Input.GetAxis("Horizontal");
 
-        if (h < 0)
+        if (h > 0.1f)
         {
-            transform.Translate(Vector3.left * h*Time.deltaTime*10);
+            transform.localScale = new Vector3(1f,1f,1f);
         }
 
-        if (h > 0)
+        if (h < -0.1f)
         {
-            transform.Translate(Vector3.left * h*Time.deltaTime*10);
+            transform.localScale = new Vector3(-1f, 1f, 1f);
         }
 
+        rb2d.AddForce(Vector2.right * speed * h);
+
+        float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -MaxSpeed, MaxSpeed);
+        rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
+
+        if (jump && gameObject.name=="Player2")
+        {
+            rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
+            rb2d.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+            jump = false;
+
+        }
 
     }
 
