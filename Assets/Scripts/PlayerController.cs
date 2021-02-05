@@ -87,10 +87,20 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Cascada")
+        {
+            gameObject.GetComponent<BoxCollider2D>().enabled=false;
+            gameObject.GetComponentInChildren<CircleCollider2D>().enabled=false;
+        }
+    }
     private void OnBecameInvisible()
     {
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        gameObject.GetComponentInChildren<CircleCollider2D>().enabled = true;
         transform.position = last;
+
     }
 
 }
