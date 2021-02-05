@@ -11,12 +11,17 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb2d;
     private Vector2 last;
 
+    public int numSaltos = 5;
+
+
 
     public bool grounded=true;
     public bool jump=false;
     // Start is called before the first frame update
     void Start()
     {
+        numSaltos = 5;
+        Debug.Log(numSaltos.ToString());
         rb2d = GetComponent<Rigidbody2D>();
         last = transform.position;
     }
@@ -31,10 +36,11 @@ public class PlayerController : MonoBehaviour
                 jump = true;
        }*/
 
-        if (Input.GetKeyDown(KeyCode.Space) && gameObject.name=="Player2")
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (grounded)
+            if (grounded && gameObject.name=="Player2")
             {
+               
                 jump = true;
             }
         }
@@ -71,8 +77,9 @@ public class PlayerController : MonoBehaviour
         float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -MaxSpeed, MaxSpeed);
         rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
 
-        if (jump && gameObject.name=="Player2")
+        if (jump)
         {
+            
             rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
             rb2d.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             jump = false;

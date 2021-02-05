@@ -8,6 +8,11 @@ public class PC2 : MonoBehaviour
     public float jumpPower = 6.5f;
     public float MaxSpeed = 10;
     public string tipo;
+    public int numSaltos = 5;
+    public int numVidas = 3;
+
+
+
     private Rigidbody2D rb2d;
     private Vector2 last;
 
@@ -31,8 +36,10 @@ public class PC2 : MonoBehaviour
                   jump = true;
          }*/
 
-        if (Input.GetKeyDown(KeyCode.Space) && gameObject.name == "Player2")
+        if (Input.GetKeyDown(KeyCode.Space) &&numSaltos>0)
         {
+            numSaltos--;
+//            numSaltos= numSaltos==0?0:numSaltos--;
             if (grounded)
             {
                 jump = true;
@@ -80,7 +87,35 @@ public class PC2 : MonoBehaviour
         }
 
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Vidas")
+        {
+            numVidas++;
+            numVidas = numVidas > 5 ? 5 : numVidas;
+            Debug.Log(numVidas.ToString());
+            Destroy(collision.gameObject);
+        }
+        if(collision.gameObject.tag == "Enemy")
+        {
+            numVidas--;
+            numVidas = numVidas < 0 ? 0 : numVidas;
+            Debug.Log(numVidas.ToString());
+            Destroy(collision.gameObject);
+        }
 
+        if(collision.gameObject.tag == "CheckPoint")
+        {
+            last = collision.gameObject.transform.position;
+        }
+
+        if (collision.gameObject.tag == "CheckPoint")
+        {
+            last = collision.gameObject.transform.position;
+        }
+
+
+    }
     private void OnBecameInvisible()
     {
         transform.position = last;
