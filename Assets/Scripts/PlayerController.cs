@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb2d;
     private Vector2 last;
 
-    public int numSaltos = 5;
-
+    public int numBombas;
+    public int numVidas;
 
 
     public bool grounded=true;
@@ -20,8 +20,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        numSaltos = 5;
-        Debug.Log(numSaltos.ToString());
+        numBombas = 5;
+        Debug.Log(numBombas.ToString());
         rb2d = GetComponent<Rigidbody2D>();
         last = transform.position;
     }
@@ -89,10 +89,31 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Cascada")
+        if (collision.gameObject.tag == "Vidas")
+        {
+            numVidas++;
+            numVidas = numVidas > 5 ? 5 : numVidas;
+            Debug.Log(numVidas.ToString());
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            numVidas--;
+            numVidas = numVidas < 0 ? 0 : numVidas;
+            Debug.Log(numVidas.ToString());
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag == "CheckPoint")
+        {
+            last = collision.gameObject.transform.position;
+        }
+
+        if (collision.gameObject.tag == "Cascada")
         {
             gameObject.GetComponent<BoxCollider2D>().enabled=false;
             gameObject.GetComponentInChildren<CircleCollider2D>().enabled=false;
+            numVidas--;
         }
     }
     private void OnBecameInvisible()
@@ -100,6 +121,7 @@ public class PlayerController : MonoBehaviour
         gameObject.GetComponent<BoxCollider2D>().enabled = true;
         gameObject.GetComponentInChildren<CircleCollider2D>().enabled = true;
         transform.position = last;
+        
 
     }
 

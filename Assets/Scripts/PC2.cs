@@ -104,20 +104,24 @@ public class PC2 : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        if(collision.gameObject.tag == "CheckPoint")
-        {
-            last = collision.gameObject.transform.position;
-        }
-
         if (collision.gameObject.tag == "CheckPoint")
         {
             last = collision.gameObject.transform.position;
+        }
+        if (collision.gameObject.tag == "Cascada")
+        {
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            gameObject.GetComponentInChildren<CircleCollider2D>().enabled = false;
+            numVidas--;
         }
 
 
     }
     private void OnBecameInvisible()
     {
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        gameObject.GetComponentInChildren<CircleCollider2D>().enabled = true;
+
         transform.position = last;
     }
 }
