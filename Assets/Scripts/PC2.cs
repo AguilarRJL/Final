@@ -108,6 +108,12 @@ public class PC2 : MonoBehaviour
         {
             last = collision.gameObject.transform.position;
         }
+        if(collision.gameObject.tag == "Saltos")
+        {
+            numSaltos++;
+            Destroy(collision.gameObject);
+        }
+        
         if (collision.gameObject.tag == "Cascada")
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;

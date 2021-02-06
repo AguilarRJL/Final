@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject bomba;
     public float speed = 75f;
     public float jumpPower = 6.5f;
     public float MaxSpeed = 10;
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public int numBombas;
     public int numVidas;
 
+    public int dir = 0;
 
     public bool grounded=true;
     public bool jump=false;
@@ -38,14 +40,24 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (grounded && gameObject.name=="Player2")
+            if (numBombas > 0 && bomba!= null)
             {
-               
-                jump = true;
+
+                var i = dir == 0 ? .5f : -.5f;
+
+                var obj = Instantiate(bomba, new Vector2(transform.position.x+i, transform.position.y+.5f), Quaternion.identity);
+
+                if (dir == 0)
+                {
+                    obj.GetComponent<Bomba>().directionI = Vector3.right;
+                }
+                else
+                {
+                    obj.GetComponent<Bomba>().directionI = Vector3.left;
+                }
+                numBombas--;
             }
         }
-
-      
 
 
     }
@@ -65,11 +77,13 @@ public class PlayerController : MonoBehaviour
         if (h > 0.1f)
         {
             transform.localScale = new Vector3(1f,1f,1f);
+            dir = 0;
         }
 
         if (h < -0.1f)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
+            dir = 1;
         }
 
         rb2d.AddForce(Vector2.right * speed * h);
