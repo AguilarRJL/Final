@@ -8,6 +8,10 @@ TagManager:
   - Platform
   - Vidas
   - Cascada
+  - Saltos
+  - Enemy
+  - Elimina
+  - "Da\xF1a"
   layers:
   - Default
   - TransparentFX
@@ -15,7 +19,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Enemigos
   - 
   - 
   - 
