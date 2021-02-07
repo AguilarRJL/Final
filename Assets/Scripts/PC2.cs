@@ -89,6 +89,16 @@ public class PC2 : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "Elimina")
+        {
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "Daña")
+        {
+            numVidas--;
+            transform.position = last;
+        }
+
         if (collision.gameObject.tag == "Vidas")
         {
             numVidas++;
