@@ -10,7 +10,7 @@ public class PC2 : MonoBehaviour
     public string tipo;
     public int numSaltos = 5;
     public int numVidas = 3;
-
+    public bool turno;
 
 
     private Rigidbody2D rb2d;
@@ -24,6 +24,8 @@ public class PC2 : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         last = transform.position;
+        turno = true;
+    
     }
 
     // Update is called once per frame
@@ -78,7 +80,7 @@ public class PC2 : MonoBehaviour
         float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -MaxSpeed, MaxSpeed);
         rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
 
-        if (jump && gameObject.name == "Player2")
+        if (jump )
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
             rb2d.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
@@ -91,12 +93,15 @@ public class PC2 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Elimina")
         {
-            Destroy(collision.gameObject);
+            EnemyFly enF = collision.gameObject.GetComponent<EnemyFly>();
+            enF.muere = true;
+
         }
         if (collision.gameObject.tag == "Daña")
         {
             numVidas--;
             transform.position = last;
+
         }
 
         if (collision.gameObject.tag == "Vidas")
@@ -106,19 +111,22 @@ public class PC2 : MonoBehaviour
             Debug.Log(numVidas.ToString());
             Destroy(collision.gameObject);
         }
-        if(collision.gameObject.tag == "Enemy")
+       /* if(collision.gameObject.tag == "Enemy")
         {
             numVidas--;
             numVidas = numVidas < 0 ? 0 : numVidas;
             Debug.Log(numVidas.ToString());
             Destroy(collision.gameObject);
-        }
+        }*/
 
         if (collision.gameObject.tag == "CheckPoint")
         {
+            Debug.Log("Tocado el CHKP");
             last = collision.gameObject.transform.position;
+            CheckPointControl cpc = collision.gameObject.GetComponent<CheckPointControl>();
+            cpc.toque = true;
         }
-        if(collision.gameObject.tag == "Saltos")
+        if (collision.gameObject.tag == "Saltos")
         {
             numSaltos++;
             Destroy(collision.gameObject);
@@ -135,9 +143,11 @@ public class PC2 : MonoBehaviour
     }
     private void OnBecameInvisible()
     {
-        gameObject.GetComponent<BoxCollider2D>().enabled = true;
-        gameObject.GetComponentInChildren<CircleCollider2D>().enabled = true;
-
-        transform.position = last;
+        if (turno)
+        {
+            gameObject.GetComponent<BoxCollider2D>().enabled = true;
+            gameObject.GetComponentInChildren<CircleCollider2D>().enabled = true;
+            transform.position = last;
+        }
     }
 }

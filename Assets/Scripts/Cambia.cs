@@ -8,6 +8,7 @@ public class Cambia : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
 
+
   
 
     public int currPlayer;
@@ -55,16 +56,24 @@ public class Cambia : MonoBehaviour
         if (currPlayer == 0)
         {
             player1.GetComponent<PlayerController>().enabled = true;
-            player2.GetComponent<PC2>().enabled = false;
+            player1.GetComponent<PlayerController>().turno = true;
 
-            FollowPlayer c= camara.GetComponent<FollowPlayer>();
+            player2.GetComponent<PC2>().enabled = false;
+            player2.GetComponent<PC2>().turno = false;
+
+            FollowPlayer c = camara.GetComponent<FollowPlayer>();
             c.follow = player1;
         }
 
         if (currPlayer == 1)
         {
             player1.GetComponent<PlayerController>().enabled = false;
+            player1.GetComponent<PlayerController>().turno = false;
+
+
             player2.GetComponent<PC2>().enabled = true;
+            player2.GetComponent<PC2>().turno = true;
+
             FollowPlayer c = camara.GetComponent<FollowPlayer>();
             c.follow = player2;
 

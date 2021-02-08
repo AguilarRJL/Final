@@ -43,7 +43,8 @@ public class Bomba : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject,.2f);
+            collision.gameObject.GetComponent<enemyController>().die = true;
+            //Destroy(collision.gameObject,.2f);
             AutoDestroy();
         }
 

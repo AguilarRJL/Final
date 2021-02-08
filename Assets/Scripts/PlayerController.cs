@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb2d;
     private Vector2 last;
 
+    public bool turno;
+
     public int numBombas;
     public int numVidas;
 
@@ -26,6 +28,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log(numBombas.ToString());
         rb2d = GetComponent<Rigidbody2D>();
         last = transform.position;
+        turno = false;
     }
 
     // Update is called once per frame
@@ -110,6 +113,13 @@ public class PlayerController : MonoBehaviour
             Debug.Log(numVidas.ToString());
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.tag == "BombaS")
+        {
+            numBombas++;
+            numBombas = numBombas > 5 ? 5 : numBombas;
+            Debug.Log(numVidas.ToString());
+            Destroy(collision.gameObject);
+        }
         if (collision.gameObject.tag == "Enemy")
         {
             numVidas--;
@@ -121,6 +131,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "CheckPoint")
         {
             last = collision.gameObject.transform.position;
+            collision.gameObject.GetComponent<CheckPointControl>().toque = true;
         }
 
         if (collision.gameObject.tag == "Cascada")
@@ -132,11 +143,13 @@ public class PlayerController : MonoBehaviour
     }
     private void OnBecameInvisible()
     {
-        gameObject.GetComponent<BoxCollider2D>().enabled = true;
-        gameObject.GetComponentInChildren<CircleCollider2D>().enabled = true;
-        transform.position = last;
-        
 
+        if (turno)
+        {
+            gameObject.GetComponent<BoxCollider2D>().enabled = true;
+            gameObject.GetComponentInChildren<CircleCollider2D>().enabled = true;
+            transform.position = last;
+        }
     }
 
 }

@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: db517057fdeba9347bf31c410802e561
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8060068395568566007
+    second: animalitos_0
+  - first:
+      213: -280481071101783076
+    second: animalitos_1
+  - first:
+      213: 1204919183605020925
+    second: animalitos_2
+  - first:
+      213: -8848187283231339386
+    second: animalitos_3
+  - first:
+      213: 3323596997531284585
+    second: animalitos_4
+  - first:
+      213: 8061082654577741030
+    second: animalitos_5
+  - first:
+      213: 6109372523639133221
+    second: animalitos_6
+  - first:
+      213: -4001160928253059704
+    second: animalitos_7
+  - first:
+      213: 5855663425899720201
+    second: animalitos_8
+  - first:
+      213: 1120946565749709945
+    second: animalitos_9
+  - first:
+      213: -7848794681433894482
+    second: animalitos_10
+  - first:
+      213: 8499345530386645672
+    second: animalitos_11
+  - first:
+      213: 2183678796517185334
+    second: animalitos_12
+  - first:
+      213: -7661550898069368558
+    second: animalitos_13
+  - first:
+      213: 4560514677192231052
+    second: animalitos_14
+  - first:
+      213: 114323640498517274
+    second: animalitos_15
+  - first:
+      213: 6676541116246042310
+    second: animalitos_16
+  - first:
+      213: 5213601883039264087
+    second: animalitos_17
+  - first:
+      213: 4424065103722589979
+    second: animalitos_18
+  - first:
+      213: -179962776166435024
+    second: animalitos_19
+  - first:
+      213: -1963635047864923338
+    second: animalitos_20
+  - first:
+      213: 610689180279580757
+    second: animalitos_21
+  - first:
+      213: 1627955989167212038
+    second: animalitos_22
+  - first:
+      213: -1631490635378309502
+    second: animalitos_23
+  - first:
+      213: 882523924173273499
+    second: animalitos_24
+  - first:
+      213: 6310479527863023051
+    second: animalitos_25
+  - first:
+      213: -2412803272754917376
+    second: animalitos_26
+  - first:
+      213: 5695603272012898983
+    second: animalitos_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animalitos_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 391
+        width: 60
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe873f608d1bdf60800000000000000
+      internalID: 8060068395568566007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 391
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3d1cea3f78b1cf0800000000000000
+      internalID: -280481071101783076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_2
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 391
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8b4d11d9bb8b010800000000000000
+      internalID: 1204919183605020925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_3
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 391
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c0edcab8ce43580800000000000000
+      internalID: -8848187283231339386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_4
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 334
+        width: 183
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964386e2cd9cf1e20800000000000000
+      internalID: 3323596997531284585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 311
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec4b2307f7bedf60800000000000000
+      internalID: 8061082654577741030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 307
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524da0001f9d8c450800000000000000
+      internalID: 6109372523639133221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_7
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 307
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ddd46b5550978c0800000000000000
+      internalID: -4001160928253059704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_8
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 311
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90eeff87cde734150800000000000000
+      internalID: 5855663425899720201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_9
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 255
+        width: 208
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c94b766f66e8f00800000000000000
+      internalID: 1120946565749709945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_10
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 257
+        width: 71
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1582a62da731390800000000000000
+      internalID: -7848794681433894482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 257
+        width: 89
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2000a7abdb3f570800000000000000
+      internalID: 8499345530386645672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_12
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 257
+        width: 104
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63795f9bb4cfd4e10800000000000000
+      internalID: 2183678796517185334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_13
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 189
+        width: 104
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21110040d04bca590800000000000000
+      internalID: -7661550898069368558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_14
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 177
+        width: 72
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c888ffeafe33a4f30800000000000000
+      internalID: 4560514677192231052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_15
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 177
+        width: 89
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15f75dceb8269100800000000000000
+      internalID: 114323640498517274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_16
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 177
+        width: 106
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6a22a75c6d7ac50800000000000000
+      internalID: 6676541116246042310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_17
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 160
+        width: 103
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75decde2a4f6a5840800000000000000
+      internalID: 5213601883039264087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_18
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 97
+        width: 97
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f269aa5cf656d30800000000000000
+      internalID: 4424065103722589979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 78
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0377ecdfec4a08df0800000000000000
+      internalID: -179962776166435024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_20
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 97
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b0187e354cfb4e0800000000000000
+      internalID: -1963635047864923338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_21
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 96
+        width: 78
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5582dbae29a997800800000000000000
+      internalID: 610689180279580757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_22
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 97
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606084cc859a79610800000000000000
+      internalID: 1627955989167212038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_23
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 17
+        width: 107
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28646ef39e7cb59e0800000000000000
+      internalID: -1631490635378309502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 17
+        width: 79
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99b12e45da5f3c00800000000000000
+      internalID: 882523924173273499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_25
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 17
+        width: 64
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc576ac32b3539750800000000000000
+      internalID: 6310479527863023051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_26
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 17
+        width: 78
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0001b8ef430048ed0800000000000000
+      internalID: -2412803272754917376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animalitos_27
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 17
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2a1e1dff8da0f40800000000000000
+      internalID: 5695603272012898983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
