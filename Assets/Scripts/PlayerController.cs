@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public string tipo;
     private Rigidbody2D rb2d;
     private Vector2 last;
-
+    private Animator animator;
     public bool turno;
 
     public int numBombas;
@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         last = transform.position;
         turno = false;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -36,10 +37,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-      /*if (grounded)
-       {
-                jump = true;
-       }*/
+
+        animator.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
+        animator.SetBool("Ground", grounded);
+        /*if (grounded)
+         {
+                  jump = true;
+         }*/
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

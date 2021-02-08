@@ -12,6 +12,8 @@ TagManager:
   - Enemy
   - Elimina
   - "Da\xF1a"
+  - CheckPoint
+  - BombaS
   layers:
   - Default
   - TransparentFX

@@ -14,6 +14,7 @@ public class PC2 : MonoBehaviour
 
 
     private Rigidbody2D rb2d;
+    private Animator anim;
     private Vector2 last;
 
 
@@ -24,6 +25,7 @@ public class PC2 : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         last = transform.position;
+        anim = GetComponent<Animator>();
         turno = true;
     
     }
@@ -33,6 +35,8 @@ public class PC2 : MonoBehaviour
 
     private void Update()
     {
+        anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
+        anim.SetBool("Grounded", grounded);
         /*if (grounded)
          {
                   jump = true;

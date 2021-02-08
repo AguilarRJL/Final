@@ -65,6 +65,33 @@ TextureImporter:
   - first:
       213: -6234055493871028971
     second: fantasma_20
+  - first:
+      213: 6928009846966005471
+    second: fantasma_33
+  - first:
+      213: -1163082624170793014
+    second: fantasma_37
+  - first:
+      213: -4441329275716676292
+    second: fantasma_38
+  - first:
+      213: 5618992846427329658
+    second: fantasma_39
+  - first:
+      213: -3852706365486522972
+    second: fantasma_40
+  - first:
+      213: 4774197918595077253
+    second: fantasma_41
+  - first:
+      213: 3589132800404221508
+    second: fantasma_44
+  - first:
+      213: 6322012948675342669
+    second: fantasma_45
+  - first:
+      213: 3146726700921561911
+    second: fantasma_47
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -86,6 +113,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -108,7 +136,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,9 +145,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -165,10 +196,10 @@ TextureImporter:
       name: fantasma_0
       rect:
         serializedVersion: 2
-        x: 523
-        y: 15
-        width: 70
-        height: 92
+        x: 38
+        y: 204
+        width: 55
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,10 +217,10 @@ TextureImporter:
       name: fantasma_1
       rect:
         serializedVersion: 2
-        x: 450
-        y: 15
-        width: 70
-        height: 92
+        x: 114
+        y: 204
+        width: 54
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,10 +238,10 @@ TextureImporter:
       name: fantasma_2
       rect:
         serializedVersion: 2
-        x: 377
-        y: 15
-        width: 70
-        height: 92
+        x: 190
+        y: 204
+        width: 52
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,12 +259,12 @@ TextureImporter:
       name: fantasma_3
       rect:
         serializedVersion: 2
-        x: 291
-        y: 15
-        width: 70
-        height: 92
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+        x: 269
+        y: 204
+        width: 51
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,10 +280,10 @@ TextureImporter:
       name: fantasma_4
       rect:
         serializedVersion: 2
-        x: 197
-        y: 15
-        width: 70
-        height: 92
+        x: 346
+        y: 204
+        width: 53
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,10 +301,10 @@ TextureImporter:
       name: fantasma_5
       rect:
         serializedVersion: 2
-        x: 108
-        y: 15
-        width: 70
-        height: 92
+        x: 422
+        y: 204
+        width: 53
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,10 +322,10 @@ TextureImporter:
       name: fantasma_6
       rect:
         serializedVersion: 2
-        x: 25
-        y: 15
-        width: 70
-        height: 92
+        x: 39
+        y: 122
+        width: 53
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,10 +343,10 @@ TextureImporter:
       name: fantasma_7
       rect:
         serializedVersion: 2
-        x: 389
-        y: 122
-        width: 55
-        height: 70
+        x: 111
+        y: 123
+        width: 50
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,10 +364,10 @@ TextureImporter:
       name: fantasma_8
       rect:
         serializedVersion: 2
-        x: 320
-        y: 122
-        width: 55
-        height: 70
+        x: 182
+        y: 123
+        width: 48
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,10 +385,10 @@ TextureImporter:
       name: fantasma_9
       rect:
         serializedVersion: 2
-        x: 249
-        y: 122
-        width: 55
-        height: 70
+        x: 250
+        y: 123
+        width: 47
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,10 +406,10 @@ TextureImporter:
       name: fantasma_10
       rect:
         serializedVersion: 2
-        x: 180
-        y: 122
-        width: 55
-        height: 70
+        x: 321
+        y: 123
+        width: 49
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,10 +427,10 @@ TextureImporter:
       name: fantasma_11
       rect:
         serializedVersion: 2
-        x: 110
-        y: 122
-        width: 55
-        height: 70
+        x: 390
+        y: 123
+        width: 50
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,10 +448,10 @@ TextureImporter:
       name: fantasma_12
       rect:
         serializedVersion: 2
-        x: 38
-        y: 122
-        width: 55
-        height: 70
+        x: 32
+        y: 27
+        width: 61
+        height: 77
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -438,10 +469,10 @@ TextureImporter:
       name: fantasma_13
       rect:
         serializedVersion: 2
-        x: 333
-        y: 313
-        width: 109
-        height: 55
+        x: 106
+        y: 17
+        width: 70
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,10 +490,10 @@ TextureImporter:
       name: fantasma_14
       rect:
         serializedVersion: 2
-        x: 222
-        y: 314
-        width: 104
-        height: 55
+        x: 190
+        y: 12
+        width: 73
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -480,10 +511,10 @@ TextureImporter:
       name: fantasma_15
       rect:
         serializedVersion: 2
-        x: 114
-        y: 314
-        width: 97
-        height: 55
+        x: 295
+        y: 12
+        width: 57
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -501,10 +532,10 @@ TextureImporter:
       name: fantasma_16
       rect:
         serializedVersion: 2
-        x: 18
-        y: 314
-        width: 90
-        height: 55
+        x: 382
+        y: 50
+        width: 52
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,9 +553,9 @@ TextureImporter:
       name: fantasma_17
       rect:
         serializedVersion: 2
-        x: 21
-        y: 376
-        width: 85
+        x: 462
+        y: 48
+        width: 50
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -543,12 +574,12 @@ TextureImporter:
       name: fantasma_18
       rect:
         serializedVersion: 2
-        x: 110
-        y: 376
-        width: 58
-        height: 45
-      alignment: 9
-      pivot: {x: 0.55452174, y: 0.4865424}
+        x: 529
+        y: 54
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -561,43 +592,190 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fantasma_19
+      name: fantasma_33
       rect:
         serializedVersion: 2
-        x: 175
-        y: 376
-        width: 58
-        height: 45
-      alignment: 9
-      pivot: {x: 0.6453918, y: 0.4999993}
+        x: 170
+        y: 38
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57f400d326ddf6eb0800000000000000
-      internalID: -4724314070088396939
+      spriteID: fde21d8ef3c352060800000000000000
+      internalID: 6928009846966005471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fantasma_20
+      name: fantasma_37
       rect:
         serializedVersion: 2
-        x: 255
-        y: 376
-        width: 58
-        height: 45
-      alignment: 9
-      pivot: {x: 0.56906074, y: 0.49531454}
+        x: 325
+        y: 39
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 515beb9ce8f2c79a0800000000000000
-      internalID: -6234055493871028971
+      spriteID: ac7eeddf386ebdfe0800000000000000
+      internalID: -1163082624170793014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasma_38
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 25
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c355d5e0e8a3d52c0800000000000000
+      internalID: -4441329275716676292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasma_39
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 35
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7413ce193caafd40800000000000000
+      internalID: 5618992846427329658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasma_40
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 32
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad1a4d19ff688ac0800000000000000
+      internalID: -3852706365486522972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasma_41
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 35
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584d44156bb514240800000000000000
+      internalID: 4774197918595077253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasma_44
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 27
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44eebc314492fc130800000000000000
+      internalID: 3589132800404221508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasma_45
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 20
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41b637084d4cb750800000000000000
+      internalID: 6322012948675342669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantasma_47
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 15
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733aaad234b6bab20800000000000000
+      internalID: 3146726700921561911
       vertices: []
       indices: 
       edges: []
