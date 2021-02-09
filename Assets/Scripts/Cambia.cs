@@ -21,7 +21,9 @@ public class Cambia : MonoBehaviour
         cambiar = false;
 
         player1.GetComponent<PlayerController>().enabled = false;
-     //   player2.GetComponent<PlayerController>().enabled = true;*/
+        player1.GetComponent<PlayerController>().turno = false;
+
+        //   player2.GetComponent<PlayerController>().enabled = true;*/
 
         FollowPlayer c = camara.GetComponent<FollowPlayer>();
         c.follow = player2;
@@ -37,26 +39,22 @@ public class Cambia : MonoBehaviour
            
             cambiar = true;
         }
-
-        
-
-    }
-
-    private void FixedUpdate()
-    {
         if (cambiar)
         {
             Change();
             cambiar = false;
         }
+
+
     }
 
+  
     void Change()
     {
         if (currPlayer == 0)
         {
-            player1.GetComponent<PlayerController>().enabled = true;
             player1.GetComponent<PlayerController>().turno = true;
+            player1.GetComponent<PlayerController>().enabled = true;
 
             player2.GetComponent<PC2>().enabled = false;
             player2.GetComponent<PC2>().turno = false;

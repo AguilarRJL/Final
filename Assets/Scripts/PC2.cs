@@ -8,7 +8,7 @@ public class PC2 : MonoBehaviour
     public float jumpPower = 6.5f;
     public float MaxSpeed = 10;
     public string tipo;
-    public int numSaltos = 5;
+    public int numSaltos = 100;
     public int numVidas = 3;
     public bool turno;
 
@@ -132,8 +132,8 @@ public class PC2 : MonoBehaviour
         }
         if (collision.gameObject.tag == "Saltos")
         {
-            numSaltos++;
             Destroy(collision.gameObject);
+            numSaltos++;
         }
         
         if (collision.gameObject.tag == "Cascada")

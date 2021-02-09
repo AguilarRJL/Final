@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         numBombas = 5;
-        Debug.Log(numBombas.ToString());
         rb2d = GetComponent<Rigidbody2D>();
         last = transform.position;
         turno = false;
@@ -129,7 +128,6 @@ public class PlayerController : MonoBehaviour
             numVidas--;
             numVidas = numVidas < 0 ? 0 : numVidas;
             Debug.Log(numVidas.ToString());
-            Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.tag == "CheckPoint")
@@ -147,9 +145,10 @@ public class PlayerController : MonoBehaviour
     }
     private void OnBecameInvisible()
     {
-
         if (turno)
         {
+            Debug.Log("Saliendo");
+
             gameObject.GetComponent<BoxCollider2D>().enabled = true;
             gameObject.GetComponentInChildren<CircleCollider2D>().enabled = true;
             transform.position = last;
